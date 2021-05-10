@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+ 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  padding: 20px;
+  background-color: #2ECA7F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.header .box1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header .box1 h2 {
+  margin-bottom: 7px;
+  font-size: 22px;
+}
+
+.header .box1 div {
+  font-size: 15px;
+}
+
+.header .box1 img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.header .box2 div {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.header .box2 i {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.content {
+  background-color: white;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.content ul {
+  list-style: none;
+  width: 15%;
+}
+
+.content ul li {
+  margin-bottom: 35px;
+  font-size: 14px;
+  position: relative;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.content ul li::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 2px;
+  background-color: #2ECA7F;
+  top: 50%;
+  margin-top: -1px;
+  left: -28px;
+  visibility: hidden;
+}
+
+li:hover{
+  color: #2ECA7F;
+}
+
+.content ul li:hover::before  { 
+  visibility: visible;
+}
+
+.content ul li span {
+  display: inline-block;
+  width: 25px;
+}
+
+.content img {
+  width: calc(50% - 150px);
+  height: 350px;
+  margin-right: 40px;
+}
+
+.content .contact {
+  width: 35%;
+  margin-top: -70px;
+}
+
+.content .contact h4 {
+  margin-bottom: 5px;
+}
+
+.content .contact .line {
+  width: 80px;
+  height: 1px;
+  background-color: #2ECA7F;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.content .contact .line::before {
+  content: "";
+  position: absolute;
+  width: 45%;
+  height: 7px;
+  background-color: #2ECA7F;
+  left: 0;
+  top: 50%;
+  margin-top: -3.5px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.content .contact p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.content .contact div:not(.line) {
+  margin-bottom: 7px;
+  font-size: 14px;
+  color: #666;
+}
+
+.content .contact div:not(.line) span {
+  color: #444;
+  font-weight: bold;
+  font-size: 13px;
+}
